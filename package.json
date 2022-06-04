@@ -1,0 +1,13 @@
+{
+  "name": "code practice",
+  "version": "1.0.0",
+  "description": "LinkedList",
+  "main": "index.js",
+  "author": "Clinton Otse",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "web3": "^1.7.3"
+  }
+}
