@@ -8,6 +8,14 @@ const getBalance = async () => {
   const result = await web3.eth.getBalance(process.env.WALLET_ADDRESS);
   const balance = web3.utils.fromWei(result, 'ether');
   console.log(balance);
+  try {
+    if (balance > 0) {
+      console.log(true);
+    }
+  } catch (error) {
+    console.log({ 'err msg': error });
+    console.log(false);
+  }
 };
 
 getBalance();
